@@ -11,7 +11,7 @@
 
 
     <script>
-        // this is an example of O(n)-Linear time complexity
+        // ** this is an example of O(n)-Linear time complexity
         // function sum(n){
         //     let sum = 0;
         //     for(let i = 0; i < n; i++ ){
@@ -20,7 +20,7 @@
         //     return sum;
         // }
 
-        // this is an example of O(1)-constant time complexity
+        // ** this is an example of O(1)-constant time complexity
         // function sum(n){
         //     return (n*(n+1))/2;
         // }
@@ -72,7 +72,7 @@
 
         // console.log(isPrime(101))
 
-        // this is an example of O(sqrt(n)) time complexity
+        // ** this is an example of O(sqrt(n)) time complexity
         // function isPrime(n){
         //     if(n < 2 ){
         //         return false;
@@ -108,7 +108,7 @@
         // console.log(isPowerOfTwo(2))
         // console.log(isPowerOfTwo(5))
 
-        // this is an example of O(1)-constant time complexity
+        // ** this is an example of O(1)-constant time complexity
         // function isPowerOfTwoBitewise(n){
         //     if(n < 1){
         //         return false;
@@ -149,7 +149,7 @@
         // console.log(factorial(5))
 
 
-        // Linear search
+        // ** Linear search
         // Linear search is an example of O(n) time complexity.
         // let arr = [-5, 2, 10, 4, 6];
         // function linearSearch(t){
@@ -165,7 +165,7 @@
         // console.log(linearSearch(20));
 
 
-        // biniary sort
+        // ** biniary sort
         // this is an example of O(logn)-logarithumic time complexity
         // function biniarySearch(arr, t){
         //     let leftIdx = 0;
@@ -186,6 +186,35 @@
         // console.log(biniarySearch([-5, 2, 4, 6, 10], 10));
         // console.log(biniarySearch([-5, 2, 4, 6, 10], 4));
         // console.log(biniarySearch([-5, 2, 4, 6, 10], 20));
+
+
+        //** recursive biniary search
+        // this is an example of O(logn) time complexity
+ 
+        // function recursiveBiniarySearch(arr, t){
+        //     return search(arr, t, 0, arr.length -1);
+        // }
+
+        // function search(arr, t, leftIdx, rightIdx){
+        //     if(leftIdx > rightIdx){
+        //         return -1;
+        //     }
+
+        //     let middleIdx = Math.floor((leftIdx+rightIdx)/2);
+        //     if(t === arr[middleIdx]){
+        //         return middleIdx;
+        //     }
+
+        //     if(t > arr[middleIdx]){
+        //         return search(arr, t, middleIdx + 1, rightIdx);
+        //     } else {
+        //         return search(arr, t, 0, rightIdx -1);
+        //     }
+        // }
+
+        // console.log(recursiveBiniarySearch([-5, 2, 4, 6, 10], 10));
+        // console.log(recursiveBiniarySearch([-5, 2, 4, 6, 10], 4));
+        // console.log(recursiveBiniarySearch([-5, 2, 4, 6, 10], 20));
 
     </script>
 </body>
